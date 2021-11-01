@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.afshin</groupId>
+    <artifactId>DDD</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>DDD</name>
+    <description>Simple 3D Services to Test Microservice Tools</description>
+    <url>https://github.com/AfshinParhizkari</url>
+    <developers>
+        <developer>
+            <id>Afshin.Parhizkari</id>
+            <name>Afshin Parhizkari</name>
+            <organization>Free lancer</organization>
+            <organizationUrl>https://github.com/AfshinParhizkari</organizationUrl>
+            <timezone>+3.30</timezone>
+        </developer>
+        <developer>
+            <id>Mahdieh.Parhizkari</id>
+            <name>Mahdieh Parhizkari</name>
+            <organization>Free lancer</organization>
+            <organizationUrl>https://github.com/MahdiehParhizkari</organizationUrl>
+            <timezone>+3.30</timezone>
+        </developer>
+    </developers>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+</project>
