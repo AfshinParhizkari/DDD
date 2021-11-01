@@ -9,15 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DDD" />
         <module name="person" />
+        <module name="Inventory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DDD" target="11" />
+      <module name="Inventory" target="11" />
       <module name="person" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Inventory" options="-parameters" />
       <module name="person" options="-parameters" />
     </option>
   </component>
