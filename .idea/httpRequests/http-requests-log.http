@@ -1,3 +1,82 @@
+DELETE http://localhost:8081/ddd/people/delete
+Accept: application/json
+Content-Type: application/json
+
+{
+    "code":467
+}
+
+<> 2021-11-02T072054.200.json
+
+###
+
+PUT http://localhost:8081/ddd/people/save
+Accept: application/json
+Content-Type: application/json
+
+  {
+    "personpk": null,
+    "persontypeid": 1,
+    "typedetailid": 1,
+    "nationalkey": "0042010955",
+    "booknumber": 2783,
+    "bookserial": "الف/93/547643",
+    "bookserie": "1334557",
+    "passportno": "5432401DH",
+    "lastname": "پرهیزکاری",
+    "firstname": "افشین",
+    "countryid": 98,
+    "cityid": null,
+    "birthdate": "1978-12-06",
+    "changerdate": "2021-09-30",
+    "contactsByPersonpk": [
+      {
+        "contactpk": null,
+        "personfk": null,
+        "ownernationalkey": "",
+        "contacttypeid": 1,
+        "countryid": 98,
+        "provinceid": 90,
+        "cityid": 90,
+        "contactnumber": "32430637",
+        "contactdesc": "ط4",
+        "email": "Afshin.Parhizkari@gmail.com",
+        "location": null,
+        "contactstatus": true,
+        "changerdate": "2021-08-25"
+      }
+    ]
+  }
+
+<> 2021-11-02T072045.200.json
+
+###
+
+DELETE http://localhost:8081/ddd/people/delete
+Accept: application/json
+Content-Type: application/json
+
+{
+    "code":466
+}
+
+<> 2021-11-02T072039.500.json
+
+###
+
+POST http://localhost:8081/ddd/people/find
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2,
+  "page":0
+}
+
+<> 2021-11-02T072012.200.json
+
+###
+
 POST http://localhost:8082/ddd/product/find
 Accept: application/json
 Content-Type: application/json
