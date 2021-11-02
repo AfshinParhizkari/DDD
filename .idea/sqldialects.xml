@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/People/src/main/java/com/afshin/person/infrastructure/repository/people.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/Product/src/main/java/com/afshin/product/infrastructure/repository/product.sql" dialect="MariaDB" />
+  </component>
+</project>
