@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ddd_product@localhost" uuid="42c5525d-78e2-43ea-a142-7709aa1a553e">
+    <data-source source="LOCAL" name="ddd_shopping@localhost" uuid="42c5525d-78e2-43ea-a142-7709aa1a553e">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://localhost:3306/ddd_product</jdbc-url>
+      <jdbc-url>jdbc:mariadb://localhost:3306/ddd_shopping</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="h2" uuid="f9cd040a-c5f8-42ce-a6ec-796e86331e6f">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:shopping</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
