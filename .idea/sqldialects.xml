@@ -3,7 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/People/src/main/java/com/afshin/person/infrastructure/repository/people.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/Product/src/main/java/com/afshin/product/infrastructure/repository/product.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/shopping/src/main/resources/data.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/shopping/src/main/resources/schema.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/Shopping/src/main/resources/data.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Shopping/src/main/resources/schema.sql" dialect="H2" />
   </component>
 </project>

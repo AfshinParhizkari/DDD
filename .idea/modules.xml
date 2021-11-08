@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DDD.iml" filepath="$PROJECT_DIR$/.idea/DDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Finance/finance.iml" filepath="$PROJECT_DIR$/Finance/finance.iml" />
       <module fileurl="file://$PROJECT_DIR$/People/people.iml" filepath="$PROJECT_DIR$/People/people.iml" />
       <module fileurl="file://$PROJECT_DIR$/Product/product.iml" filepath="$PROJECT_DIR$/Product/product.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shopping/shopping.iml" filepath="$PROJECT_DIR$/shopping/shopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shopping/shopping.iml" filepath="$PROJECT_DIR$/Shopping/shopping.iml" />
     </modules>
   </component>
 </project>

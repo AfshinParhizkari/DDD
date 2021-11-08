@@ -1,0 +1,54 @@
+###  http://localhost:8083/ddd/api-ui
+##### Show Cart #################################
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+##### Add To Cart #################################
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+##### Close Cart #################################
+POST http://localhost:8083/ddd/shopping/closecart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+##### Delete From Cart #################################
+DELETE http://localhost:8083/ddd/shopping/deletefromcart
+Accept: application/json
+Content-Type: application/json
+
+{
+    "code":1
+}
+##### cancel  Cart #################################
+DELETE http://localhost:8083/ddd/shopping/cancelcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":3
+}
+##### Show Product #################################
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}

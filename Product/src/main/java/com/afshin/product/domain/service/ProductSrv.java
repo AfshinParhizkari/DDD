@@ -31,7 +31,7 @@ public class ProductSrv {
     public List<Product> find(Integer code, Integer pageNum) throws Exception {
         List<Product> returnData;
         Pageable somedata =  PageRequest.of(pageNum, 10, Sort.by("productpk").descending());
-        if(code==0) returnData = (proDao.findAll(somedata)).getContent();
+        if(code==0) returnData = (proDao.findByActive(somedata,true)).getContent();
         else returnData=proDao.findByProductpk(code);
         return returnData;
     }

@@ -18,4 +18,6 @@ import java.util.List;
 public interface ProductDao extends JpaRepository<Product, Integer>{
 	Page<Product> findAll(Pageable pageable);
 	List<Product> findByProductpk(Integer productcode);
+	Page<Product> findByActive(Pageable pageable,Boolean isactive);
+
 }

@@ -10,20 +10,27 @@
         <module name="product" />
         <module name="DDD" />
         <module name="people" />
+        <module name="finance" />
         <module name="shopping" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DDD" target="11" />
+      <module name="Finance" target="11" />
+      <module name="finance" target="11" />
       <module name="people" target="11" />
       <module name="product" target="11" />
       <module name="Product" target="11" />
+      <module name="Shopping" target="11" />
       <module name="shopping" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Finance" options="-parameters" />
       <module name="Product" options="-parameters" />
+      <module name="Shopping" options="-parameters" />
+      <module name="finance" options="-parameters" />
       <module name="people" options="-parameters" />
       <module name="product" options="-parameters" />
       <module name="shopping" options="-parameters" />

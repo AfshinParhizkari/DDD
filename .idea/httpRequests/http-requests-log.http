@@ -1,3 +1,595 @@
+POST http://localhost:8083/ddd/shopping/closecart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-08T081544.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T081514.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 2,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T081510.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 3,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T081506.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/closecart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-08T075140.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 3,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T075117.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T075113.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 2,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T075106.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 2,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T071714.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+
+<> 2021-11-08T071549.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/closecart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-08T071537.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 3,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T071525.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 2,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T071508.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 4,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T071503.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 3,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T071456.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+
+<> 2021-11-08T023645.200.json
+
+###
+
+DELETE http://localhost:8083/ddd/shopping/cancelcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":3
+}
+
+<> 2021-11-08T023641.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+
+<> 2021-11-08T023627.200.json
+
+###
+
+DELETE http://localhost:8083/ddd/shopping/cancelcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-08T023619.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+
+<> 2021-11-08T023607.200.json
+
+###
+
+DELETE http://localhost:8083/ddd/shopping/cancelcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-08T023601.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+
+<> 2021-11-08T023554.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "cartpk": null,
+  "customerfk": 3,
+  "productfk": 1,
+  "quantity": 10,
+  "price": 20.20
+}
+
+<> 2021-11-08T023549.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showcart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1
+}
+
+<> 2021-11-08T023528.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}
+
+<> 2021-11-07T122113.200.json
+
+###
+
+POST http://localhost:8082/ddd/product/find
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":0
+}
+
+<> 2021-11-07T121636.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}
+
+<> 2021-11-07T115725.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}
+
+<> 2021-11-07T115707.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}
+
+###
+
+POST http://localhost:8083/ddd/shopping/closecart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-07T112643.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}
+
+<> 2021-11-07T084327.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":null,
+  "page":null
+}
+
+<> 2021-11-07T084323.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+<> 2021-11-07T084242.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+<> 2021-11-07T084228.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+<> 2021-11-07T084153.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+<> 2021-11-07T084134.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+<> 2021-11-07T084110.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2,
+  "page":0
+}
+
+<> 2021-11-07T084046.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T084031.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T084027.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T083909.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T080148.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T075635.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T074528.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/showproduct
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":1,
+  "page":0
+}
+
+<> 2021-11-07T074350.500.json
+
+###
+
 PUT http://localhost:8083/ddd/shopping/addtocart
 Accept: application/json
 Content-Type: application/json
@@ -51,532 +643,6 @@ Content-Type: application/json
 }
 
 <> 2021-11-06T063534.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 2,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T063529.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 5,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T063522.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 5,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T061902.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": null,
-  "productfk": 5,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T061754.500.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 5,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T060700.200.json
-
-###
-
-POST http://localhost:8083/ddd/shopping/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":1
-}
-
-<> 2021-11-06T060310.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 3,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T060137.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 3,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T055508.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 3,
-  "quantity": 10,
-  "price": 20.20
-}
-
-<> 2021-11-06T054823.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 3,
-  "quantity": 3,
-  "price": 22.10
-}
-
-<> 2021-11-06T054503.200.json
-
-###
-
-POST http://localhost:8083/ddd/shopping/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":1
-}
-
-<> 2021-11-06T054424.200.json
-
-###
-
-DELETE http://localhost:8081/ddd/people/delete
-Accept: application/json
-Content-Type: application/json
-
-{
-    "code":467
-}
-
-<> 2021-11-02T072054.200.json
-
-###
-
-PUT http://localhost:8081/ddd/people/save
-Accept: application/json
-Content-Type: application/json
-
-  {
-    "personpk": null,
-    "persontypeid": 1,
-    "typedetailid": 1,
-    "nationalkey": "0042010955",
-    "booknumber": 2783,
-    "bookserial": "الف/93/547643",
-    "bookserie": "1334557",
-    "passportno": "5432401DH",
-    "lastname": "پرهیزکاری",
-    "firstname": "افشین",
-    "countryid": 98,
-    "cityid": null,
-    "birthdate": "1978-12-06",
-    "changerdate": "2021-09-30",
-    "contactsByPersonpk": [
-      {
-        "contactpk": null,
-        "personfk": null,
-        "ownernationalkey": "",
-        "contacttypeid": 1,
-        "countryid": 98,
-        "provinceid": 90,
-        "cityid": 90,
-        "contactnumber": "32430637",
-        "contactdesc": "ط4",
-        "email": "Afshin.Parhizkari@gmail.com",
-        "location": null,
-        "contactstatus": true,
-        "changerdate": "2021-08-25"
-      }
-    ]
-  }
-
-<> 2021-11-02T072045.200.json
-
-###
-
-DELETE http://localhost:8081/ddd/people/delete
-Accept: application/json
-Content-Type: application/json
-
-{
-    "code":466
-}
-
-<> 2021-11-02T072039.500.json
-
-###
-
-POST http://localhost:8081/ddd/people/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-<> 2021-11-02T072012.200.json
-
-###
-
-POST http://localhost:8082/ddd/product/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":38,
-  "page":0
-}
-
-<> 2021-11-02T045919.200.json
-
-###
-
-DELETE http://localhost:8082/ddd/product/delete
-Accept: application/json
-Content-Type: application/json
-
-{
-    "code":38
-}
-
-<> 2021-11-02T045915.200.json
-
-###
-
-POST http://localhost:8082/ddd/product/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":38,
-  "page":0
-}
-
-<> 2021-11-02T045858.200.json
-
-###
-
-PUT http://localhost:8082/ddd/product/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "productpk": null,
-  "productname": "New 3D Samplea",
-  "categoryfk": 3,
-  "vendor": "Afshin Parhizkari Code Gen",
-  "quantity": 1,
-  "unit": "Kmeter",
-  "buyprice": 10.00,
-  "saleprice": 20.30,
-  "active": true,
-  "description": "This code generate for working with microservice tools."
-}
-
-<> 2021-11-02T045849.200.json
-
-###
-
-PUT http://localhost:8082/ddd/product/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "productpk": null,
-  "productname": "New 3D Samplea",
-  "categoryfk": 3,
-  "vendor": "Afshin Parhizkari Code Gen",
-  "quantity": 1,
-  "unit": "Kmeter",
-  "buyprice": 10.00,
-  "saleprice": 20.30,
-  "active": true,
-  "description": "This code generate for working with microservice tools."
-}
-
-<> 2021-11-02T045743.500.json
-
-###
-
-PUT http://localhost:8082/ddd/product/save
-Accept: application/json
-Content-Type: application/json
-
-{
-  "productpk": null,
-  "productname": "New 3D Samplea",
-  "categoryfk": 3,
-  "vendor": "Afshin Parhizkari Code Gen",
-  "quantity": 1,
-  "unit": "Kmeter",
-  "buyprice": 10.00,
-  "saleprice": 20.30,
-  "active": true,
-  "description": "This code generate for working with microservice tools.",
-}
-
-<> 2021-11-02T045730.500.json
-
-###
-
-POST http://localhost:8082/ddd/product/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-<> 2021-11-02T045407.200.json
-
-###
-
-POST http://localhost:8082/ddd/product/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-###
-
-POST http://localhost:8081/ddd/product/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-###
-
-DELETE http://localhost:8081/ddd/people/delete
-Accept: application/json
-Content-Type: application/json
-
-{
-    "code":466
-}
-
-<> 2021-11-02T020827.200.json
-
-###
-
-POST http://localhost:8081/ddd/people/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":466,
-  "page":0
-}
-
-<> 2021-11-02T020821.200.json
-
-###
-
-PUT http://localhost:8081/ddd/people/save
-Accept: application/json
-Content-Type: application/json
-
-  {
-    "personpk": null,
-    "persontypeid": 1,
-    "typedetailid": 1,
-    "nationalkey": "0042010955",
-    "booknumber": 2783,
-    "bookserial": "الف/93/547643",
-    "bookserie": "1334557",
-    "passportno": "5432401DH",
-    "lastname": "پرهیزکاری",
-    "firstname": "افشین",
-    "countryid": 98,
-    "cityid": null,
-    "birthdate": "1978-12-06",
-    "changerdate": "2021-09-30",
-    "contactsByPersonpk": [
-      {
-        "contactpk": null,
-        "personfk": null,
-        "ownernationalkey": "",
-        "contacttypeid": 1,
-        "countryid": 98,
-        "provinceid": 90,
-        "cityid": 90,
-        "contactnumber": "32430637",
-        "contactdesc": "ط4",
-        "email": "Afshin.Parhizkari@gmail.com",
-        "location": null,
-        "contactstatus": true,
-        "changerdate": "2021-08-25"
-      }
-    ]
-  }
-
-<> 2021-11-02T020812.200.json
-
-###
-
-POST http://localhost:8081/ddd/people/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-<> 2021-11-02T020802.200.json
-
-###
-
-DELETE http://localhost:8081/ddd/people/delete
-Accept: application/json
-Content-Type: application/json
-
-{
-    "code":465
-}
-
-<> 2021-11-02T014411.500.json
-
-###
-
-POST http://localhost:8081/ddd/people/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-<> 2021-11-02T014358.200.json
-
-###
-
-POST http://localhost:8081/ddd/person/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-<> 2021-11-01T072106.200.json
-
-###
-
-DELETE http://localhost:8081/ddd/person/delete
-Accept: application/json
-Content-Type: application/json
-
-{
-    "code":465
-}
-
-<> 2021-11-01T064542.500.json
-
-###
-
-POST http://localhost:8081/ddd/person/find
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2,
-  "page":0
-}
-
-<> 2021-11-01T064511.200.json
 
 ###
 
