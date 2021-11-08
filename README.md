@@ -1,2 +1,2 @@
 # DDD
-Some DDD rest services for using microservice tools
+Some DDD rest services to use for microservice tools
