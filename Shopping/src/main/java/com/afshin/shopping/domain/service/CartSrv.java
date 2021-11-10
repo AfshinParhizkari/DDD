@@ -13,6 +13,7 @@ import com.afshin.shopping.infrastructure.mq.OrderMq;
 import com.afshin.shopping.infrastructure.repository.CartDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
@@ -24,19 +25,19 @@ public class CartSrv {
     public List<Cart> showCart() throws Exception {
         return cartDao.findAll();
     }
-    public String deleteFromCart(Integer code) throws Exception {
-        cartDao.deleteById(code);
-        return "{'code':1,'message':'record code "+code+" is deleted'}";
+    public String deleteFromCart(Integer customercode,Integer productcode) throws Exception {
+        cartDao.deleteProduct(customercode,productcode);
+        return "{'code':1,'message':'record code "+productcode+" is deleted'}";
     }
     public String cancelCart(Integer code) throws Exception {
         cartDao.deleteByCustomer(code);
         return "{'code':1,'message':'record code "+code+" is deleted'}";
     }
     public String addToCart(Cart cart) throws Exception {
-            return "{'code':1,'message':'record code "+cartDao.save(cart).getCartpk()+" is added'}";
+            return "{'code':1,'message':'record code "+cartDao.save(cart).getProductfk()+" is added'}";
      }
 
-    @Transactional
+    @Transactional(rollbackFor=Exception.class, propagation= Propagation.REQUIRED)
     public String closeCart(Integer customercode) throws Exception {
         List<Cart> cartList=cartDao.findByCustomerfk(customercode);
         if(orderMq.sendOrder(cartList)==0) {

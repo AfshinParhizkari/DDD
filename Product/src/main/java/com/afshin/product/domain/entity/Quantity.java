@@ -1,4 +1,4 @@
-package com.afshin.finance.domain.entity;
+package com.afshin.product.domain.entity;
 /**
  * @Project DDD
  * @Author Afshin Parhizkari
@@ -14,7 +14,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class Product {
+public class Quantity {
     private Integer productpk;
     private Integer quantity;
 }

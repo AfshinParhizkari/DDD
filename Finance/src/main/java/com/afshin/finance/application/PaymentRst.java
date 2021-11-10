@@ -23,21 +23,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RestController//Application Layer
-@RequestMapping("/shopping")
+@RequestMapping("/finance")
 public class PaymentRst {
     @Autowired private PaymentSrv srv;
 
     @PostMapping(value = "/payed")
-    public String delete(@RequestBody String receivedData) throws Exception {
+    public String payInvoice(@RequestBody String receivedData) throws Exception {
         JSONObject json = new JSONObject(receivedData);
         Integer customerCode=json.optInt("customer",0);
         String transaction=json.optString("transaction","");
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String defaultData = df.format(new Date());
-        String transportDate=json.optString("transport",defaultData);
-        Date parsedDate = df.parse(transportDate);
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String defaultData = df.format(new Date());
+            String transportDate=json.optString("transport",defaultData);
+            Date parsedDate = df.parse(transportDate);
         Timestamp timestamp = new java.sql.Timestamp(parsedDate.getTime());
-
         return srv.payOrder(customerCode,timestamp,transaction);
     }
 

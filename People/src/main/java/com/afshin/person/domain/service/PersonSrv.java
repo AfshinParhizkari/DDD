@@ -53,13 +53,14 @@ public class PersonSrv {
     @Transactional
     public Integer insertPerson(Person viewPerson){
         viewPerson = perDao.save(viewPerson);
-        if(viewPerson.getContactsByPersonpk()!=null)
-            if(viewPerson.getContactsByPersonpk().size()>0){
+        if(viewPerson.getContactsByPersonpk()!=null) {
+            if (viewPerson.getContactsByPersonpk().size() > 0) {
                 Integer personCode = viewPerson.getPersonpk();
                 viewPerson.getContactsByPersonpk().forEach(contact -> contact.setPersonfk(personCode));
                 conDao.saveAll(viewPerson.getContactsByPersonpk());
             }
-        return viewPerson.getPersonpk();
+            return viewPerson.getPersonpk();
+        }else return 0;
     }
     @Transactional
     public Integer updatePerson(Person viewPerson, Person dbPerson){

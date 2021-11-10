@@ -35,8 +35,9 @@ public class CartRst {
     @DeleteMapping(value = "/deletefromcart")
     public String delete(@RequestBody String receivedData) throws Exception {
         JSONObject json = new JSONObject(receivedData);
-        Integer code=json.optInt("code",0);
-        return srv.deleteFromCart(code);
+        Integer customerCode=json.optInt("customercode",0);
+        Integer productCode=json.optInt("productcode",0);
+        return srv.deleteFromCart(customerCode,productCode);
     }
     @DeleteMapping(value = "/cancelcart")
     public String cancel(@RequestBody String receivedData) throws Exception {
@@ -53,8 +54,8 @@ public class CartRst {
     @PostMapping(value = "/closecart")
     public String close(@RequestBody String receivedData) throws Exception {
         JSONObject json = new JSONObject(receivedData);
-        Integer code=json.optInt("code",0);
-        return srv.closeCart(code);
+        Integer customerCode=json.optInt("code",0);
+        return srv.closeCart(customerCode);
     }
 
     @PostMapping(value = "/showproduct")

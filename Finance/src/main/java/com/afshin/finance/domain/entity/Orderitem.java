@@ -6,7 +6,7 @@ package com.afshin.finance.domain.entity;
  * @Time 2:57 AM
  * Created by   IntelliJ IDEA
  * Email:       Afshin.Parhizkari@gmail.com
- * Description:
+ * Description: Entity Object
  */
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -84,7 +84,7 @@ public class Orderitem {
     }
 
     @ManyToOne
-    @JoinColumn(name = "orderfk", referencedColumnName = "orderpk", nullable = false)
+    @JoinColumn(name = "orderfk", referencedColumnName = "orderpk", nullable = false,insertable = false,updatable = false)
     @JsonIgnore
     public Order getOrderByOrderfk() {
         return orderByOrderfk;

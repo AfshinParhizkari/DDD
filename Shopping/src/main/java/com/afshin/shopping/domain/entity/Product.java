@@ -17,7 +17,7 @@ public class Product {
     private String productname;
     private Integer categoryfk;
     private String vendor;
-    private Short quantity;
+    private Integer quantity;
     private String unit;
     private BigDecimal saleprice;
     private String description;
@@ -52,10 +52,10 @@ public class Product {
         this.vendor = vendor;
     }
 
-    public Short getQuantity() {
+    public Integer getQuantity() {
         return quantity;
     }
-    public void setQuantity(Short quantity) {
+    public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 

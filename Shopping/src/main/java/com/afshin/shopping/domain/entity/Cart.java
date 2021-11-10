@@ -19,24 +19,20 @@ import java.sql.Timestamp;
 
 @Entity//RootAggregate=RootEntity
 @Table(name = "cart")
+@IdClass(CartPK.class)
 public class Cart implements Serializable {
-    private Integer cartpk;
     private Integer customerfk;
     private Integer productfk;
     private Integer quantity;
     private BigDecimal price;
-    private Timestamp adddate;
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY) //specify the generation strategy used for the primary key.
-    public Integer getCartpk() {return cartpk;}
-    public void setCartpk(Integer cartpk) {this.cartpk = cartpk;}
-
 	@Column(name = "customerfk")
     @NotNull(message = "Customer Code should not be empty")
     public Integer getCustomerfk() {return customerfk;}
     public void setCustomerfk(Integer customerfk) {this.customerfk = customerfk;}
 
+    @Id
 	@Column(name = "productfk")
     @NotNull(message = "Product Code should not be empty")
     public Integer getProductfk() {return productfk;}
@@ -52,10 +48,4 @@ public class Cart implements Serializable {
     public BigDecimal getPrice() {return price;}
     public void setPrice(BigDecimal price) {this.price = price;}
 
-	@Column(name = "adddate")
-    @CreationTimestamp
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    public Timestamp getAdddate() {return adddate;}
-    public void setAdddate(Timestamp adddate) {this.adddate = adddate;}
 }

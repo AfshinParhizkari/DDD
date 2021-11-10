@@ -11,8 +11,6 @@ package com.afshin.finance.infrastructure.repository;
 
 import com.afshin.finance.domain.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
-import java.util.List;
 
 public interface OrderDao extends JpaRepository<Order, Integer>{
-    List<Order> findByOrderpk(Integer orderpk);
 }

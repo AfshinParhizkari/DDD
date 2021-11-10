@@ -20,5 +20,4 @@ public interface ContactDao extends JpaRepository<Contact, UUID>{
     @Transactional
     @Query("delete from Contact c where c.personfk = :personCode")
     int deleteByPersonfk(Integer personCode);
-
 }

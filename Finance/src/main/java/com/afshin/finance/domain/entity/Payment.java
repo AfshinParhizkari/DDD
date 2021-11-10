@@ -6,7 +6,7 @@ package com.afshin.finance.domain.entity;
  * @Time 2:57 AM
  * Created by   IntelliJ IDEA
  * Email:       Afshin.Parhizkari@gmail.com
- * Description:
+ * Description: Root Aggregate
  */
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.hibernate.annotations.CreationTimestamp;
@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Objects;
 
-@Entity
+@Entity//Root Entity
 public class Payment {
     private Integer paymentpk;
     private Integer orderfk;
@@ -99,7 +99,7 @@ public class Payment {
     }
 
     @ManyToOne
-    @JoinColumn(name = "orderfk", referencedColumnName = "orderpk", nullable = false)
+    @JoinColumn(name = "orderfk", referencedColumnName = "orderpk", nullable = false,insertable = false,updatable = false)
     public Order getOrderByOrderfk() {
         return orderByOrderfk;
     }

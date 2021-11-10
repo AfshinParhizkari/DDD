@@ -9,10 +9,8 @@ package com.afshin.finance.infrastructure.repository;
  * Description: 
 */
 
-import com.afshin.finance.domain.entity.Order;
 import com.afshin.finance.domain.entity.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
 
 public interface PaymentDao extends JpaRepository<Payment, Integer>{

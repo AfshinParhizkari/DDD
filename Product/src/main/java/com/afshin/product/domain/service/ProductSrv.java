@@ -2,6 +2,7 @@ package com.afshin.product.domain.service;
 
 import com.afshin.product.domain.entity.Category;
 import com.afshin.product.domain.entity.Product;
+import com.afshin.product.domain.entity.Quantity;
 import com.afshin.product.infrastructure.repository.CategoryDao;
 import com.afshin.product.infrastructure.repository.ProductDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,10 @@ public class ProductSrv {
         if(code==0) returnData = (proDao.findByActive(somedata,true)).getContent();
         else returnData=proDao.findByProductpk(code);
         return returnData;
+    }
+
+    public List<Quantity> getQuantity(List<Integer> productKeys) throws Exception {
+        return proDao.findByProductpkIn(productKeys);
     }
 
     public String delete(Integer code) throws Exception {

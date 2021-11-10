@@ -6,7 +6,7 @@ package com.afshin.finance.domain.entity;
  * @Time 2:57 AM
  * Created by   IntelliJ IDEA
  * Email:       Afshin.Parhizkari@gmail.com
- * Description:
+ * Description: Entity Object
  */
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -21,26 +21,27 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
+@Table(name = "orders")
 public class Order {
     private Integer orderpk;
     private Integer customerfk;
     private Timestamp orderdate;
     private Timestamp shippdate;
-    private String status;
-    private String comment;
+    private String state;
+    private String note;
     private Collection<Orderitem> orderitemsByOrderpk;
     private Collection<Payment> paymentsByOrderpk;
 
-    public Order(Integer customerfk, Timestamp shippdate, String status) {
+    public Order(Integer customerfk, Timestamp shippdate, String state) {
         this.customerfk = customerfk;
         this.shippdate = shippdate;
-        this.status = status;
+        this.state = state;
     }
-
     public Order() {}
 
     @Id
     @Column(name = "orderpk")
+    @GeneratedValue(strategy=GenerationType.IDENTITY) //specify the generation strategy used for the primary key.
     public Integer getOrderpk() {
         return orderpk;
     }
@@ -82,22 +83,22 @@ public class Order {
     }
 
     @Basic
-    @Column(name = "status")
+    @Column(name = "state")
     @NotEmpty(message = "وضعیت سفارش نمی تواند خالی باشد")
-    public String getStatus() {
-        return status;
+    public String getState() {
+        return state;
     }
-    public void setStatus(String status) {
-        this.status = status;
+    public void setState(String state) {
+        this.state = state;
     }
 
     @Basic
-    @Column(name = "comment")
-    public String getComment() {
-        return comment;
+    @Column(name = "note")
+    public String getNote() {
+        return note;
     }
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setNote(String note) {
+        this.note = note;
     }
 
     @Override
@@ -105,11 +106,11 @@ public class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return Objects.equals(orderpk, order.orderpk) && Objects.equals(customerfk, order.customerfk) && Objects.equals(orderdate, order.orderdate) && Objects.equals(shippdate, order.shippdate) && Objects.equals(status, order.status) && Objects.equals(comment, order.comment);
+        return Objects.equals(orderpk, order.orderpk) && Objects.equals(customerfk, order.customerfk) && Objects.equals(orderdate, order.orderdate) && Objects.equals(shippdate, order.shippdate) && Objects.equals(state, order.state) && Objects.equals(note, order.note);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(orderpk, customerfk, orderdate, shippdate, status, comment);
+        return Objects.hash(orderpk, customerfk, orderdate, shippdate, state, note);
     }
 
     @OneToMany(mappedBy = "orderByOrderfk")

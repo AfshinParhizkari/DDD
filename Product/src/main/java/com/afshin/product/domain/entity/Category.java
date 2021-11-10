@@ -13,9 +13,9 @@ import java.util.Objects;
  * @Time 3:27 AM
  * Created by   IntelliJ IDEA
  * Email:       Afshin.Parhizkari@gmail.com
- * Description:Entity
+ * Description:Entity Object
  */
-@Entity//Entity
+@Entity//Entity Object
 public class Category {
     private Integer categorypk;
     private String categoryname;

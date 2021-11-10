@@ -19,7 +19,7 @@ public class Product {
     private String productname;
     private Integer categoryfk;
     private String vendor;
-    private Short quantity;
+    private Integer quantity;
     private String unit;
     private BigDecimal buyprice;
     private BigDecimal saleprice;
@@ -66,10 +66,10 @@ public class Product {
 
     @Basic
     @Column(name = "quantity")
-    public Short getQuantity() {
+    public Integer getQuantity() {
         return quantity;
     }
-    public void setQuantity(Short quantity) {
+    public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 

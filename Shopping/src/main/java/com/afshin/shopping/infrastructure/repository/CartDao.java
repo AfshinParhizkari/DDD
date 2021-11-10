@@ -10,20 +10,24 @@ package com.afshin.shopping.infrastructure.repository;
 */
 
 import com.afshin.shopping.domain.entity.Cart;
+import com.afshin.shopping.domain.entity.CartPK;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
-public interface CartDao extends JpaRepository<Cart, Integer>{
-    List<Cart> findByCartpk(Integer categorycode);
+public interface CartDao extends JpaRepository<Cart, CartPK>{
     List<Cart> findByCustomerfk(Integer customercode);
 
     @Modifying
     @Transactional
-    @Query("delete from Cart c where c.customerfk = :customercode ")
+    @Query("delete from Cart c where c.customerfk = :customercode")
     Integer deleteByCustomer(Integer customercode);
+
+    @Modifying
+    @Transactional
+    @Query("delete from Cart c where c.customerfk = :customercode and c.productfk = :productcode")
+    Integer deleteProduct(Integer customercode,Integer productcode);
 
 }

@@ -8,6 +8,13 @@ Content-Type: application/json
   "page":0
 }
 ##################################################################################################
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+##################################################################################################
+
 DELETE http://localhost:8082/ddd/product/delete
 Accept: application/json
 Content-Type: application/json

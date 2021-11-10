@@ -6,48 +6,17 @@ package com.afshin.finance.domain.entity;
  * @Time 4:26 AM
  * Created by   IntelliJ IDEA
  * Email:       Afshin.Parhizkari@gmail.com
- * Description:Entity
+ * Description: Value Object
  */
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.format.annotation.DateTimeFormat;
-
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import lombok.Data;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Timestamp;
 
+@Data
 public class Preorder implements Serializable {
-    private Integer cartpk;
     private Integer customerfk;
     private Integer productfk;
     private Integer quantity;
     private BigDecimal price;
-    private Timestamp adddate;
-
-    public Integer getCartpk() {return cartpk;}
-    public void setCartpk(Integer cartpk) {this.cartpk = cartpk;}
-
-    @NotNull(message = "Customer Code should not be empty")
-    public Integer getCustomerfk() {return customerfk;}
-    public void setCustomerfk(Integer customerfk) {this.customerfk = customerfk;}
-
-    @NotNull(message = "Product Code should not be empty")
-    public Integer getProductfk() {return productfk;}
-    public void setProductfk(Integer productfk) {this.productfk = productfk;}
-
-    @NotNull(message = "quantity should not be empty")
-    public Integer getQuantity() {return quantity;}
-    public void setQuantity(Integer quantity) {this.quantity = quantity;}
-
-    @NotNull(message = "price should not be empty")
-    public BigDecimal getPrice() {return price;}
-    public void setPrice(BigDecimal price) {this.price = price;}
-
-     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    public Timestamp getAdddate() {return adddate;}
-    public void setAdddate(Timestamp adddate) {this.adddate = adddate;}
 }

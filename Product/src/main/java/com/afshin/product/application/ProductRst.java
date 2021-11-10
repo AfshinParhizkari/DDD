@@ -19,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController//Application Layer
 @RequestMapping("/product")
@@ -31,6 +32,11 @@ public class ProductRst {
         Integer code=json.optInt("code",0);
         Integer page=json.optInt("page",0);
         return (new ObjectMapper()).writeValueAsString(srv.find(code,page));
+    }
+
+    @PostMapping(value = "/quantity")
+    public String getQuantity(@RequestBody List<Integer> productKeys) throws Exception {
+        return (new ObjectMapper()).writeValueAsString(srv.getQuantity(productKeys));
     }
 
     @DeleteMapping(value = "/delete")
