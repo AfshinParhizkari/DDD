@@ -10,7 +10,6 @@ package com.afshin.shopping.domain.entity;
  */
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Objects;
 
 public class Product {
     private Integer productpk;

@@ -8,7 +8,6 @@ package com.afshin.shopping.infrastructure.mq;
  * Email:       Afshin.Parhizkari@gmail.com
  * Description:
  */
-import com.afshin.shopping.application.AMQPConfig;
 import com.afshin.shopping.domain.entity.Cart;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.core.*;

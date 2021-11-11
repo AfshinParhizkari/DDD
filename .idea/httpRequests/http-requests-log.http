@@ -8,6 +8,561 @@ Content-Type: application/json
   "transport": "2021-11-11 14:30:50"
 }
 
+<> 2021-11-11T154916.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/closecart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-11T154356.200.json
+
+###
+
+PUT http://localhost:8083/ddd/shopping/addtocart
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customerfk": 2,
+  "productfk": 28,
+  "quantity": 0,
+  "price": 20.20
+}
+
+<> 2021-11-11T154348.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T152330.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T152144.200.json
+
+###
+
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T151842.200.json
+
+###
+
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T151839.200.json
+
+###
+
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150645.500.json
+
+###
+
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150515.500.json
+
+###
+
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150441.500.json
+
+###
+
+POST http://localhost:8082/ddd/product/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150433.500.json
+
+###
+
+POST http://localhost:8082/ddd/quantity/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150402.404.json
+
+###
+
+POST http://localhost:8082/ddd/quantity/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150347.404.json
+
+###
+
+POST http://localhost:8082/ddd/quantity/quantity
+Accept: application/json
+Content-Type: application/json
+
+[2,3,4,5]
+
+<> 2021-11-11T150224.404.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T150132.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T150051.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T142527.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T142036.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T142017.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T141332.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T141149.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T135630.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T134529.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T133415.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T131510.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T131328.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T131238.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T111223.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T104545.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T104424.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T103929.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T100902.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T093708.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T093602.200.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T083401.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T081314.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T080821.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
+<> 2021-11-11T075017.500.json
+
+###
+
+POST http://localhost:8084/ddd/finance/payed
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customer":2,
+  "transaction":"sb125954c",
+  "transport": "2021-11-11 14:30:50"
+}
+
 <> 2021-11-10T133608.200.json
 
 ###
@@ -92,604 +647,6 @@ Content-Type: application/json
 }
 
 <> 2021-11-10T132905.500.json
-
-###
-
-POST http://localhost:8083/ddd/shopping/closecart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2
-}
-
-<> 2021-11-10T132806.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customerfk": 2,
-  "productfk": 31,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T132759.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customerfk": 2,
-  "productfk": 29,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T132755.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customerfk": 2,
-  "productfk": 30,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T132749.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customerfk": 2,
-  "productfk": 30,
-  "quantity": 2,
-  "price": 20.20
-}
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 30,
-  "quantity": 2,
-  "price": 20.20
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T131515.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T131418.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T131348.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T130802.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T130605.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T130110.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T125119.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T124539.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T124206.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T123811.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T122630.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T122451.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T122345.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T122023.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T122011.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T121914.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T120556.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T120253.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T114600.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T113813.200.json
-
-###
-
-POST http://localhost:8083/ddd/shopping/closecart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2
-}
-
-<> 2021-11-10T113524.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 30,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T113521.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 31,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T113512.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 31,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T113435.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 31,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T112625.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 30,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T112619.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 29,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T112615.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8083/ddd/shopping/closecart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "code":2
-}
-
-<> 2021-11-10T110001.200.json
-
-###
-
-PUT http://localhost:8083/ddd/shopping/addtocart
-Accept: application/json
-Content-Type: application/json
-
-{
-  "cartpk": null,
-  "customerfk": 2,
-  "productfk": 29,
-  "quantity": 2,
-  "price": 20.20
-}
-
-<> 2021-11-10T105959.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T105546.500.json
 
 ###
 

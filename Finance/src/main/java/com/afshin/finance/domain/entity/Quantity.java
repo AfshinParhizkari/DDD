@@ -8,13 +8,13 @@ package com.afshin.finance.domain.entity;
  * Email:       Afshin.Parhizkari@gmail.com
  * Description: Value Object
  */
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
-public class Product {
+@Setter
+public class Quantity {
     private Integer productpk;
     private Integer quantity;
 }

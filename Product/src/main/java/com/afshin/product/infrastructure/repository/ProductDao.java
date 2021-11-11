@@ -22,7 +22,5 @@ public interface ProductDao extends JpaRepository<Product, Integer>{
 	Page<Product> findAll(Pageable pageable);
 	List<Product> findByProductpk(Integer productcode);
 	Page<Product> findByActive(Pageable pageable,Boolean isactive);
-	@Query("SELECT p.productpk,p.quantity FROM Product p where p.productpk in :productkeys")
-	List<Quantity> getProductQuantity(List<Integer> productkeys);
-	List<Quantity> findByProductpkIn(List<Integer> productkeys);
+	List<Product> findByProductpkIn(List<Integer> productkeys);
 }

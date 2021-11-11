@@ -1,5 +1,6 @@
 package com.afshin.product.domain.service;
 
+import com.afshin.product.application.Utility;
 import com.afshin.product.domain.entity.Category;
 import com.afshin.product.domain.entity.Product;
 import com.afshin.product.domain.entity.Quantity;
@@ -38,7 +39,7 @@ public class ProductSrv {
     }
 
     public List<Quantity> getQuantity(List<Integer> productKeys) throws Exception {
-        return proDao.findByProductpkIn(productKeys);
+        return Utility.Product2Quantity(proDao.findByProductpkIn(productKeys));
     }
 
     public String delete(Integer code) throws Exception {

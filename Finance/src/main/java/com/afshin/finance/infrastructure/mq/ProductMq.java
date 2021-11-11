@@ -8,8 +8,12 @@ package com.afshin.finance.infrastructure.mq;
  * Email:       Afshin.Parhizkari@gmail.com
  * Description:
  */
-import com.afshin.finance.domain.entity.Product;
+import com.afshin.finance.domain.entity.Quantity;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,9 +26,11 @@ public class ProductMq {
     @Autowired private Binding binding;
     @Value("${product.routingkey}") String routingKey;
 
-    public Integer sendProductQuantity(List<Product> products){
+    public Integer sendProductQuantity(List<Quantity> quantities){
         try {
-            rabbitTemplate.convertAndSend(binding.getExchange(),routingKey,products);
+            String quantitiesJson = (new ObjectMapper()).writeValueAsString(quantities);
+            Message message = MessageBuilder.withBody(quantitiesJson.getBytes()).setContentType(MessageProperties.CONTENT_TYPE_JSON).build();
+            rabbitTemplate.send(binding.getExchange(),routingKey, message);
             return 0;
         }catch (Exception ex){return 1;}
     }

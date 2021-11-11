@@ -8,9 +8,7 @@ package com.afshin.finance.infrastructure.resource;
  * Email:       Afshin.Parhizkari@gmail.com
  * Description:
  */
-
-import com.afshin.finance.domain.entity.Product;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.afshin.finance.domain.entity.Quantity;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -25,21 +23,13 @@ import java.util.List;
 public class ProductRso {
     RestTemplate restTemplate=new RestTemplate();
     HttpHeaders headers = new HttpHeaders();
-    @Value("${product.find}") private String findPath;
-    public List<Product> find(String inputValue) throws IOException {
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<String> request =new HttpEntity<String>(inputValue, headers);
-        Product[] products =restTemplate.postForObject(findPath, request, Product[].class);
-        //String productJson =restTemplate.postForObject(findPath, request, String.class);
-        return Arrays.asList(products);
-    }
 
-    @Value("${product.quantity}") private String quantityPath;
-    public List<Product> getQuantity(List<Integer> inputValue) throws IOException {
+    @Value("${product.quantity}") private String productPath;
+    public List<Quantity> getQuantity(List<Integer> inputValue) throws IOException {
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> request =new HttpEntity<String>(inputValue.toString(), headers);
-        Product[] products =restTemplate.postForObject(quantityPath, request, Product[].class);
+        Quantity[] quantities =restTemplate.postForObject(productPath, request, Quantity[].class);
         //String productJson =restTemplate.postForObject(findPath, request, String.class);
-        return Arrays.asList(products);
+        return Arrays.asList(quantities);
     }
 }

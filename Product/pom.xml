@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.afshin</groupId>
-    <artifactId>product</artifactId>
+    <artifactId>quantity</artifactId>
     <version>1</version>
     <name>Product</name>
     <description>Product Microservice</description>

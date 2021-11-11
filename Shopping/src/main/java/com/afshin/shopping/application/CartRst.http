@@ -15,7 +15,7 @@ Content-Type: application/json
 {
   "customerfk": 2,
   "productfk": 28,
-  "quantity": 2,
+  "quantity": 0,
   "price": 20.20
 }
 ##### Finalization Cart #################################

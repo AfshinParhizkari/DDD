@@ -38,36 +38,44 @@ public class PaymentSrv {
 
     @Transactional(rollbackFor=Exception.class, propagation= Propagation.REQUIRED)
     public String payOrder(Integer customerCode, Timestamp transportDate,String transaction) throws IOException {
-        List<Preorder> preorders= orderMq.payInvoice(customerCode.toString());
-        if(preorders==null || preorders.size()==0) return "{'code':1,'message':'there aren't any product in your cart'}";
-        Order order = oDao.save(new Order(customerCode,transportDate,"payed"));
+        List<Preorder> preorders = orderMq.payInvoice(customerCode.toString());
+        if (preorders == null || preorders.size() == 0)
+            return "{'code':1,'message':'there aren't any product in your cart'}";
+        Order order = oDao.save(new Order(customerCode, transportDate, "payed"));
 
-        List<Orderitem> orderitems=new ArrayList<>();
-        List<Product> products=new ArrayList<>();
-        BigDecimal total= new BigDecimal(0);
-        for(Preorder preo:preorders) {
+        List<Orderitem> orderitems = new ArrayList<>();
+        List<Quantity> quantities = new ArrayList<>();
+        BigDecimal total = new BigDecimal(0);
+        for (Preorder preo : preorders) {
             orderitems.add(new Orderitem(order.getOrderpk(), preo.getProductfk(), preo.getQuantity(), preo.getPrice()));
-            total=total.add(preo.getPrice());
-            products.add(new Product(preo.getProductfk(),preo.getQuantity()));
+            total = total.add(preo.getPrice());
+            quantities.add(new Quantity(preo.getProductfk(), preo.getQuantity()));
         }
         //Have you enough goods in Inventory?
-        List<Integer> productKeys= products.stream().map(Product::getProductpk).collect(Collectors.toList());
-        List<Product> vacantProduct=new ArrayList<>();
-        List<Product> quantityList = pRso.getQuantity(productKeys);
-        for(Product product:products){
-            Integer dbQuantity=quantityList.stream().filter(entry -> entry.getProductpk()==product.getProductpk()).collect(Collectors.toList()).get(0).getQuantity();
-            if(dbQuantity<product.getQuantity())
-                vacantProduct.add(new Product(product.getProductpk(),product.getQuantity()));
+        List<Integer> productKeys = quantities.stream().map(Quantity::getProductpk).collect(Collectors.toList());
+        List<Quantity> vacantQuantity = new ArrayList<>();
+        List<Quantity> quantityList=new ArrayList<>();
+        try {
+            quantityList = pRso.getQuantity(productKeys);
+        }catch (Exception ex){
+            oDao.deleteById(order.getOrderpk());
+            return "{'code':0,'message':'product service is not response'}";
         }
-        if(vacantProduct.size()==0) {
+        for (Quantity quantity : quantities) {
+            Integer dbQuantity = quantityList.stream().filter(entry -> entry.getProductpk() == quantity.getProductpk()).collect(Collectors.toList()).get(0).getQuantity();
+            if (dbQuantity < quantity.getQuantity())
+                vacantQuantity.add(new Quantity(quantity.getProductpk(), quantity.getQuantity()));
+        }
+        if (vacantQuantity.size() == 0) {
             dDao.saveAll(orderitems);
             Payment payment = pDao.save(new Payment(order.getOrderpk(), total, transaction));
-            productMq.sendProductQuantity(products);//remove quantity from Product app by mq
-            return "{'order':'" + order.getOrderpk() + ",'payment':'" + payment.getPaymentpk() + "'}";
+            productMq.sendProductQuantity(quantities);//remove quantity from Product app by mq
+            return "{'orderId':" + order.getOrderpk() + ",'paymentId':" + payment.getPaymentpk() + "}";
         }else {
             oDao.deleteById(order.getOrderpk());
             //send toward mq for returning to shopping app!
-            return (new ObjectMapper()).writeValueAsString(vacantProduct);
+            return (new ObjectMapper()).writeValueAsString(vacantQuantity);
         }
+
     }
 }

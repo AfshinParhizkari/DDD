@@ -9,12 +9,14 @@ package com.afshin.product.domain.entity;
  * Description: Value Object
  */
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
+import java.io.Serializable;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
-public class Quantity {
+@Setter
+public class Quantity implements Serializable {
     private Integer productpk;
     private Integer quantity;
 }

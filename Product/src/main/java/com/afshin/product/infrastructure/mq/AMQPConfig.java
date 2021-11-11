@@ -1,4 +1,4 @@
-package com.afshin.product.application;
+package com.afshin.product.infrastructure.mq;
 /**
  * @Project DDD
  * @Author Afshin Parhizkari
@@ -10,19 +10,15 @@ package com.afshin.product.application;
  */
 
 import org.springframework.amqp.core.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Configuration
 public class AMQPConfig {
     @Value("${product.queue}") String queueName;
-    @Bean Queue queue() {
-        return new Queue(queueName, true);
-    }
-
+    @Bean Queue queue(){return new Queue(queueName);}
+    /*@Bean Jackson2JsonMessageConverter Jackson2JsonMessageConverter() {
+        return new Jackson2JsonMessageConverter();
+    }*/
 }
