@@ -1,4 +1,4 @@
-CREATE TABLE `quantity` (
+CREATE TABLE `product` (
                            `productpk` int(11) NOT NULL AUTO_INCREMENT,
                            `productname` varchar(70) NOT NULL,
                            `categoryfk` int(11) NOT NULL,
@@ -13,7 +13,6 @@ CREATE TABLE `quantity` (
                            KEY `fk_product_1` (`categoryfk`),
                            CONSTRAINT `fk_product_1` FOREIGN KEY (`categoryfk`) REFERENCES `category` (`categorypk`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
-
 
 CREATE TABLE `category` (
                             `categorypk` int(11) NOT NULL AUTO_INCREMENT,
