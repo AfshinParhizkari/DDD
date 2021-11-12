@@ -10,12 +10,9 @@ package com.afshin.product.infrastructure.repository;
 */
 
 import com.afshin.product.domain.entity.Product;
-import com.afshin.product.domain.entity.Quantity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-
 import java.util.List;
 
 public interface ProductDao extends JpaRepository<Product, Integer>{

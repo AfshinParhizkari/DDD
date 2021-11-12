@@ -29,5 +29,4 @@ public interface CartDao extends JpaRepository<Cart, CartPK>{
     @Transactional
     @Query("delete from Cart c where c.customerfk = :customercode and c.productfk = :productcode")
     Integer deleteProduct(Integer customercode,Integer productcode);
-
 }

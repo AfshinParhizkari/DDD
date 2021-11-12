@@ -11,6 +11,7 @@ package com.afshin.shopping.application;
 
 import com.afshin.shopping.domain.entity.Cart;
 import com.afshin.shopping.domain.service.CartSrv;
+import com.afshin.shopping.infrastructure.resource.PeopleRso;
 import com.afshin.shopping.infrastructure.resource.ProductRso;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -25,7 +26,15 @@ import javax.validation.Valid;
 @RequestMapping("/shopping")
 public class CartRst {
     @Autowired private CartSrv srv;
-    @Autowired private ProductRso proRes;
+    @Autowired private ProductRso productRso;
+    @Autowired private PeopleRso peopleRso;
+
+    @PostMapping(value = "/who")
+    public String whoami(@RequestBody String receivedData) throws Exception {
+        JSONObject json = new JSONObject(receivedData);
+        String customerCode=json.optString("customercode","0");
+        return (new ObjectMapper()).writeValueAsString(peopleRso.find(customerCode));
+    }
 
     @PostMapping(value = "/showcart")
     public String find() throws Exception {
@@ -64,7 +73,7 @@ public class CartRst {
         Integer code=json.optInt("code",0);
         Integer page=json.optInt("page",0);
         String inputValue="{'code':"+code+",'page':"+page+"}";
-        return (new ObjectMapper()).writeValueAsString(proRes.find(inputValue));
+        return (new ObjectMapper()).writeValueAsString(productRso.find(inputValue));
     }
 
     @ExceptionHandler(Exception.class)

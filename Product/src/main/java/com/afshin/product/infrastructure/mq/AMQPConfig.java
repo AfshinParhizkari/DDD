@@ -18,7 +18,4 @@ import org.springframework.context.annotation.Configuration;
 public class AMQPConfig {
     @Value("${product.queue}") String queueName;
     @Bean Queue queue(){return new Queue(queueName);}
-    /*@Bean Jackson2JsonMessageConverter Jackson2JsonMessageConverter() {
-        return new Jackson2JsonMessageConverter();
-    }*/
 }

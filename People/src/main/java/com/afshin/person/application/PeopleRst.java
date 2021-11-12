@@ -32,7 +32,10 @@ public class PeopleRst {
         Integer page=json.optInt("page",0);
         return (new ObjectMapper()).writeValueAsString(srv.find(code,page));
     }
-
+    @PostMapping(value = "/who")
+    public String whoami(@RequestBody String receivedData) throws Exception {
+        return (new ObjectMapper()).writeValueAsString(srv.find(Integer.parseInt(receivedData),0));
+    }
     @DeleteMapping(value = "/delete")
     public String delete(@RequestBody String receivedData) throws Exception {
         JSONObject json = new JSONObject(receivedData);

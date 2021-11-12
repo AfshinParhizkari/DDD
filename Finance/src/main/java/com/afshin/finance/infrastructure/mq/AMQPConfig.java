@@ -10,11 +10,9 @@ package com.afshin.finance.infrastructure.mq;
  */
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,7 +25,7 @@ public class AMQPConfig {
 
 
     @Bean public TopicExchange getExchange(){return new TopicExchange(exchangeName,Boolean.TRUE,Boolean.FALSE);}
-   /* @Bean Queue queue() {return new Queue(queueName, true);}*/
+   /* @Bean Queue queue() {return new Queue(queueName);}*/
 
     @Bean public Binding getBinding(){
         Queue queue=new Queue(queueName,true,false,false, getArguments());

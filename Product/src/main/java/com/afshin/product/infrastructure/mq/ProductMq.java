@@ -11,16 +11,13 @@ package com.afshin.product.infrastructure.mq;
 import com.afshin.product.domain.entity.Product;
 import com.afshin.product.domain.entity.Quantity;
 import com.afshin.product.infrastructure.repository.ProductDao;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -29,7 +26,7 @@ public class ProductMq {
     @Autowired ProductDao dao;
     @Autowired Queue queue;
 
-    @RabbitListener(queues = "#{queue.getName()}"/*,messageConverter = "Jackson2JsonMessageConverter"*/)// Dynamically reading the queue name using SpEL from the "queue" object.
+    @RabbitListener(queues = "#{queue.getName()}")// Dynamically reading the queue name using SpEL from the "queue" object.
     public void getProductQuantity(final Message message) throws IOException {
         List<Quantity> quantities = (new ObjectMapper()).readValue(message.getBody(), new TypeReference<List<Quantity>>(){});
         for(Quantity quantity:quantities){

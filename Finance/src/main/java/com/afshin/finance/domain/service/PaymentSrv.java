@@ -76,6 +76,11 @@ public class PaymentSrv {
             //send toward mq for returning to shopping app!
             return (new ObjectMapper()).writeValueAsString(vacantQuantity);
         }
+    }
 
+    public String updateState(Integer statusCode,String status){
+        Integer result=oDao.updateState(statusCode,status);
+        if(result>0) return "'code':1,'message':'record is changed'";
+        else return "'code':0,'message':'some problem is occurred'";
     }
 }

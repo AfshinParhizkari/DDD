@@ -39,6 +39,12 @@ public class PaymentRst {
         Timestamp timestamp = new java.sql.Timestamp(parsedDate.getTime());
         return srv.payOrder(customerCode,timestamp,transaction);
     }
+    @PutMapping(value = "/carry")
+    public String carry(@RequestBody String receivedData) throws Exception {
+        JSONObject json = new JSONObject(receivedData);
+        Integer code=json.optInt("code",0);
+        return srv.updateState(code,"shipped");
+    }
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(value= HttpStatus.INTERNAL_SERVER_ERROR)
