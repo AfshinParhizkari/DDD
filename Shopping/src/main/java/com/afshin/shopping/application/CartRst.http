@@ -52,11 +52,11 @@ Content-Type: application/json
   "code":null,
   "page":null
 }
-##### Show Product #################################
+##### Who am i #################################
 POST http://localhost:8083/ddd/shopping/who
 Accept: application/json
 Content-Type: application/json
 
 {
-  "customercode":"2"
+  "code":2
 }

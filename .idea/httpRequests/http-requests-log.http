@@ -3,6 +3,105 @@ Accept: application/json
 Content-Type: application/json
 
 {
+  "code":2
+}
+
+<> 2021-11-16T201757.200.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+###
+
+POST http://localhost:8081/ddd/people/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-16T201015.200.json
+
+###
+
+POST http://localhost:8081/ddd/people/find
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2,
+  "page":0
+}
+
+###
+
+POST http://localhost:8081/ddd/people/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+###
+
+POST http://localhost:8081/ddd/people/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+###
+
+POST http://localhost:8081/ddd/people/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+###
+
+POST http://localhost:8083/ddd/shopping/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-16T195258.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/who
+Accept: application/json
+Content-Type: application/json
+
+{
+  "code":2
+}
+
+<> 2021-11-16T195107.500.json
+
+###
+
+POST http://localhost:8083/ddd/shopping/who
+Accept: application/json
+Content-Type: application/json
+
+{
   "customercode":"2"
 }
 
@@ -514,130 +613,6 @@ Content-Type: application/json
   "transaction":"sb125954c",
   "transport": "2021-11-11 14:30:50"
 }
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T100902.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T093708.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T093602.200.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T083401.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T081314.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T080821.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-11T075017.500.json
-
-###
-
-POST http://localhost:8084/ddd/finance/payed
-Accept: application/json
-Content-Type: application/json
-
-{
-  "customer":2,
-  "transaction":"sb125954c",
-  "transport": "2021-11-11 14:30:50"
-}
-
-<> 2021-11-10T133608.200.json
 
 ###
 
