@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product" />
-        <module name="DDD" />
         <module name="people" />
         <module name="finance" />
         <module name="shopping" />
